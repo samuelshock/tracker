@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 437:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginPageModule", function() { return LoginPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(438);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(465);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,15 +38,15 @@ var LoginPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 438:
+/***/ 465:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(147);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -113,7 +113,7 @@ var LoginPage = /** @class */ (function () {
     ], LoginPage.prototype, "slides", void 0);
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"E:\projects\tracker\src\pages\login\login.html"*/'<ion-content padding>\n\n    <ion-slides pager>\n\n        <ion-slide>\n\n            <ion-toolbar>\n            </ion-toolbar>\n\n            <img src="assets/imgs/usuario.jpg" class="slide-image" />\n            <h2 class="slide-title">Ingrese su clave</h2>\n            <p>Para continuar, debe de ingresar su código</p>\n\n            <ion-list>\n                <ion-item>\n                    <ion-label>Clave</ion-label>\n                    <ion-input type="text" [(ngModel)]="clave" (keyup.enter)="continuar()"></ion-input>\n                </ion-item>\n            </ion-list>\n\n            <button ion-button [disabled]="clave.length < 3" (click)="continuar()">\n            Verificar\n          </button>\n\n        </ion-slide>\n\n\n        <!-- Ultimo Slide -->\n        <ion-slide>\n            <ion-toolbar>\n            </ion-toolbar>\n\n            <img src="assets/imgs/check.jpg" class="slide-image" />\n            <h2 class="slide-title">¿Listo para empezar?</h2>\n\n            <button ion-button large clear icon-right color="primary" (click)="ingresar()">\n            Continuar\n            <ion-icon name="arrow-forward"></ion-icon>\n          </button>\n\n        </ion-slide>\n        <!-- Fin del último slide -->\n\n    </ion-slides>\n\n\n</ion-content>'/*ion-inline-end:"E:\projects\tracker\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"D:\projects\tracker\src\pages\login\login.html"*/'<ion-content padding>\n\n\n\n    <ion-slides pager>\n\n\n\n        <ion-slide>\n\n\n\n            <ion-toolbar>\n\n            </ion-toolbar>\n\n\n\n            <img src="assets/imgs/usuario.jpg" class="slide-image" />\n\n            <h2 class="slide-title">Ingrese su clave</h2>\n\n            <p>Para continuar, debe de ingresar su código</p>\n\n\n\n            <ion-list>\n\n                <ion-item>\n\n                    <ion-label>Clave</ion-label>\n\n                    <ion-input type="text" [(ngModel)]="clave" (keyup.enter)="continuar()"></ion-input>\n\n                </ion-item>\n\n            </ion-list>\n\n\n\n            <button ion-button [disabled]="clave.length < 3" (click)="continuar()">\n\n            Verificar\n\n          </button>\n\n\n\n        </ion-slide>\n\n\n\n\n\n        <!-- Ultimo Slide -->\n\n        <ion-slide>\n\n            <ion-toolbar>\n\n            </ion-toolbar>\n\n\n\n            <img src="assets/imgs/check.jpg" class="slide-image" />\n\n            <h2 class="slide-title">¿Listo para empezar?</h2>\n\n\n\n            <button ion-button large clear icon-right color="primary" (click)="ingresar()">\n\n            Continuar\n\n            <ion-icon name="arrow-forward"></ion-icon>\n\n          </button>\n\n\n\n        </ion-slide>\n\n        <!-- Fin del último slide -->\n\n\n\n    </ion-slides>\n\n\n\n\n\n</ion-content>'/*ion-inline-end:"D:\projects\tracker\src\pages\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__["a" /* UsuarioService */],

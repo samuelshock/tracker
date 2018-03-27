@@ -25678,6 +25678,10 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
+page-home agm-map {
+  height: 100%;
+}
+
 page-login .toolbar-background {
   background: #fff;
   border-color: transparent;
