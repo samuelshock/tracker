@@ -9,7 +9,7 @@ import { Platform } from 'ionic-angular';
 @Injectable()
 export class UsuarioService {
 
-  clave: string;
+  clave: string = "";
 
   constructor(
     private afDB: AngularFireDatabase, 
@@ -18,9 +18,9 @@ export class UsuarioService {
   ) {}
 
   verifica_usuario( clave: string) {
-    clave = clave.toLocaleLowerCase();
-
     let promesa = new Promise( (resolve, reject) => {
+      clave = clave.toLocaleLowerCase();
+      console.log(clave);
       this.afDB.list('/usuarios/'+ clave)
         .valueChanges()
         .subscribe( data => {

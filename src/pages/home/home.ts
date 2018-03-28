@@ -15,14 +15,20 @@ export class HomePage {
   ) {
       this._ubicacion.iniciar_localizacion();
       this._ubicacion.usuario.valueChanges().subscribe( data => {
-        console.log(data);
-        this.usuario = data;
+        console.log("cambiar data ", data);
+        this.usuario = {
+          lat: parseFloat(data.lat),
+          lng: parseFloat(data.lng),
+          nombre: data.nombre
+        }
+        ;
       });
   }
 
   salir() {
-    this._us.borrar_usuario();
     this._ubicacion.detener_watch();
+    this._us.borrar_usuario();
+    this.usuario = {};
     this.navCtrl.setRoot('Login'); 
 
   }

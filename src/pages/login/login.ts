@@ -4,6 +4,7 @@ import { ViewChild, AfterViewInit } from '@angular/core';
 import { Slides } from 'ionic-angular';
 import { UsuarioService } from '../../providers/usuario/usuario';
 import { HomePage } from '../home/home';
+import { UbicacionService } from '../../providers/ubicacion/ubicacion';
 
 
 
@@ -18,12 +19,14 @@ import { HomePage } from '../home/home';
 export class LoginPage implements AfterViewInit {
 
   @ViewChild(Slides) slides: Slides;
-  clave: string = "sam-1";
+  clave: string = "";
 
   constructor(public navCtrl: NavController,
               private _us: UsuarioService,
               private loadingCtrl: LoadingController,
-              private alertCtrl: AlertController) {
+              private alertCtrl: AlertController,
+              private _ubicacionService: UbicacionService
+            ) {
   }
 
   continuar() {
@@ -59,6 +62,7 @@ export class LoginPage implements AfterViewInit {
 
   ingresar() {
     //Tenemos la clave, ir a home
+    this._ubicacionService.iniciar_nueva_session();
     this.navCtrl.setRoot(HomePage);
   }
 
